@@ -21,6 +21,9 @@ console.log('hello world')
 
 // TODO: ADD CODE HERE
 
+let message1 = "I am doing JavaScript";
+console.log(message1);
+
 /* Challenge #2
  * Create variables for your first and last name then print your full name
  *
@@ -33,6 +36,10 @@ console.log('hello world')
  */
 
 // TODO: ADD CODE HERE
+
+let firstName = "Alaina";
+let lastName = "Worley";
+console.log(firstName + " " + lastName);
 
 /* Challenge #3
  * Calculate the total price rounded to two decimals
@@ -48,6 +55,11 @@ console.log('hello world')
 
 // TODO: ADD CODE HERE
 
+const price = 2.5
+const quantity = 4
+const total = (price * quantity);
+console.log(total.toFixed(2));
+
 /* Challenge #4
  * Declare a variable and conditionally assign it a value
  *
@@ -56,13 +68,22 @@ console.log('hello world')
  * 2. Declare a variable called `message` and don't assign it a value
  * 3. Create a conditional statement that checks if `weather` is equal to "Sunny"
  * 4. If `weather` meets the condition above, then set `message` equal to "Yay! It's sunny outside"
- * 5. Add an `else` clause that sets `message` equal to "Aww! It's not sunny outside"
+ * 5. Add an `else` clause that sets `message` equal to "Aww! It's not sunny outside."
  * 6. Use `console.log` to print out the value of `message`
  *
  * Example Output: "Aww! It's not sunny outside"
  */
 
 // TODO: ADD CODE HERE
+
+let weather = "Rainy";
+let message = " ";
+if (weather === "Sunny") {
+    message = "Yay! It's sunny outside";
+} else {
+    message = "Aww! It's not sunny outside";
+}
+console.log(message);
 
 /* Challenge #5
  * Create a function that returns any string
@@ -77,6 +98,11 @@ console.log('hello world')
 
 // TODO: ADD CODE HERE
 
+function myFunction () {
+    return "This is my function";
+}
+console.log(myFunction());
+
 /* Challenge #6
  * Rewrite the function in Challenge #5 as an arrow function
  *
@@ -89,6 +115,11 @@ console.log('hello world')
  */
 
 // TODO: ADD CODE HERE
+
+myArrowFunction = () => {
+    return "This is my arrow function";
+}
+console.log(myArrowFunction());
 
 /* Challenge #7
  * Create a function that accepts a string argument and returns it in all uppercase
@@ -103,6 +134,12 @@ console.log('hello world')
  */
 
 // TODO: ADD CODE HERE
+
+stringToUpper = (str) => {
+    str = "I am so excited!!";
+    return str.toUpperCase();
+}
+console.log(stringToUpper());
 
 /* Challenge #8
  * Create a function that accepts a number argument and returns double its value
@@ -120,3 +157,11 @@ console.log('hello world')
  */
 
 // TODO: ADD CODE HERE
+
+multiplyByTwo = (number) => {
+    return number * 2;
+}
+let num1 = multiplyByTwo(1);
+let num2 = multiplyByTwo(5);
+let num3 = multiplyByTwo(10);
+console.log(num1, num2, num3);
