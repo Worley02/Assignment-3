@@ -136,10 +136,10 @@ console.log(myArrowFunction());
 // TODO: ADD CODE HERE
 
 stringToUpper = (str) => {
-    str = "I am so excited!!";
     return str.toUpperCase();
 }
-console.log(stringToUpper());
+console.log(stringToUpper("I am so excited!!"));
+
 
 /* Challenge #8
  * Create a function that accepts a number argument and returns double its value
